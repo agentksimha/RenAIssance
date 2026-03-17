@@ -48,7 +48,7 @@ def calculate_cer(reference, hypothesis):
     edit_distance = Levenshtein.distance(reference, hypothesis)
     return edit_distance / len(reference)
 
-# Function to perform OCR with PyTorch model
+# Function to perform OCR with Pytorch model
 def perform_ocr(model, processor, image_path, model_type="model"):
     """Perform OCR on an image and measure inference time."""
     try:
